@@ -20,7 +20,6 @@
     "es6-promise": "^3.2.1",
     "exports-loader": "^0.6.3",
     "imports-loader": "^0.6.5",
-    "jquery": "^3.1.0",
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
@@ -32,7 +31,6 @@
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "es6-promise": "^3.2.1",
-    "path": "^0.12.7",
-    "underscore": "^1.8.3"
+    "path": "^0.12.7"
   }
 }

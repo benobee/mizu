@@ -1,9 +1,7 @@
 import _ from 'underscore';
 
 //////////////////////////////////////////////////
-// lightweight DOM selector with only the most sought
-// after methods that snake oil salesman will be trying 
-// to con you with for years
+// lightweight DOM selector using underscore
 //////////////////////////////////////////////////
 
 class Element {
@@ -54,8 +52,7 @@ class Element {
 };
 
 //////////////////////////////////////////////////
-// get this delinquent out of the house to do 
-// something useful. Tough Love, you know?
+//@method to construct new elements upon seletion
 //////////////////////////////////////////////////
 
 const $ = (query) => {

@@ -4,7 +4,7 @@ const PROD = JSON.parse(process.env.PROD_ENV || '1');
 
 const config = {
 	context: __dirname,
-	entry: PROD ? ['./main.js', './main.less'] : ['./main.js', './main.less', 'webpack-dev-server/client?http://localhost:8080'],
+	entry: ['./main.js', './main.less', 'webpack-dev-server/client?http://localhost:8080'],
 	devtool: PROD ? '' : 'eval',
 	output: {
 		publicPath: '/',

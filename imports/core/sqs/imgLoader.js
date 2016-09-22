@@ -1,16 +1,6 @@
-import $ from 'jquery';
-
 const sqs_image = {
 
     images : document.querySelectorAll('img[data-src]' ),
-
-    fit ( image ) {
-    	$(image).wrap('<div class="content-fit"></div>');
-    },
-
-    fill ( image ) {
-    	$(image).wrap('<div class="content-fill"></div>');
-    },
 
     loadAllImages () {
 

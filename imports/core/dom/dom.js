@@ -1,4 +1,4 @@
-// import Element from "./element";
+//import Element from "./element";
 
 class DOM_Cache {
 	constructor(query) {

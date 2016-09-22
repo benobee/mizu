@@ -1,16 +1,15 @@
-import $ from 'jquery';
+import { $ } from '../core/index';
 
 const banner = {
-	init(){
-		this.bannerText = $("#page-title-wrapper");
-		this.fadeInBannerText();
-    
-	},
+  init(){
+    this.bannerText = $("#page-title-wrapper");
+    this.fadeInBannerText();
+  },
   fadeInBannerText(){
-    console.log(this.bannerText.length);
       if (this.bannerText.length > 0){
-        setTimeout(function(){
-        	$("#page-title-wrapper").addClass("is-loaded");
+        setTimeout(() => {
+
+          this.bannerText.addClass("is-loaded");
 
         }, 500);
       }
