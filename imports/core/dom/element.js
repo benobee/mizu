@@ -1,7 +1,7 @@
-import _ from 'underscore';
+import _ from 'lodash';
 
 //////////////////////////////////////////////////
-// lightweight DOM selector using underscore
+// lightweight DOM selector
 //////////////////////////////////////////////////
 
 class Element {
