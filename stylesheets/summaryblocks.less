@@ -1,0 +1,26 @@
+.summary-item{
+  position:relative;
+  &:hover .summary-thumbnail{
+    opacity:0.7 !important;
+  }
+  .summary-thumbnail-container{
+    background:black;
+    .summary-thumbnail{
+      transition:opacity 0.3s;
+      opacity:0.5;
+    }
+  }
+  .summary-title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    a{
+      color:white;
+      font-weight:400;
+    }
+  }
+}

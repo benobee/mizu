@@ -1,0 +1,75 @@
+//no banner image class
+.no-banner-image{
+  #banner-area{
+    min-height:0px;
+    padding-top:60px;
+    @media screen and (max-width:1024px){
+      padding:0;
+    }
+    padding-bottom:0px;
+    #page-title{
+      padding-top:20px;
+      color:black;
+    }
+  }  
+}
+
+//services page
+#collection-5797c6be725e25bd3edf3a6b{
+  .no-banner-image;
+  #page-5797c6be725e25bd3edf3a6b{
+    padding-bottom:21px;
+    .sqs-row:nth-child(1){
+      @media screen and (max-width:1024px){
+        h1{
+          font-size:1.1em;
+          margin-bottom:4px;
+        }
+        h2{
+          font-size:1em;
+        }
+      }
+      @media screen and (max-width:640px){
+        h1, h2{
+          text-align:center;
+        }
+
+      }
+      .col.sqs-col-6{
+        .sqs-block.image-block{
+          padding:0px;
+        }
+        .sqs-block-html{
+          .sqs-block-content{
+            
+			display:flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height:300px;
+            @media screen and (max-width:640px){
+                         justify-content: center;
+            }
+            @media screen and (max-width:1024px){
+             min-height:200px;
+            }
+            @media screen and (max-width:725px){
+              min-height:200px;
+            }
+          }
+        }
+      }		
+     .sqs-row:nth-child(odd){
+        background:linear-gradient(45deg, #f2f2f2 0%, #f9f9f9 100%);
+      }
+      .sqs-row:nth-child(even){
+        background:linear-gradient(45deg, #c4c4c4 0%, #FEFEFE 100%);
+		@media screen and (max-width:640px){
+            display: flex;
+            display: -webkit-flex;
+    		flex-direction: column-reverse;
+            -webkit-flex-direction: column-reverse;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// theme
+
+#page-title-wrapper{
+  opacity:0;
+  transition:0.5s;
+  &.is-loaded{
+    opacity:1;
+  }
+}
+
+.table{
+  tbody{
+    tr{
+      td{
+        @media screen and (max-width:768px){
+          font-size:0.9em;
+          padding:1em 0.5em 0.5em 0.5em;
+        }
+        font-size:1.2em;
+        padding:1em;
+        &:nth-child(1){
+          max-width:800px;
+          padding-right:3em;
+        }
+        &:nth-child(2){
+          max-width:150px;
+        }
+      }
+    }
+  }
+}
+
+.center{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.page-header{
+  text-align:center;
+  font-size:44px;
+  font-weight:400;
+  text-transform:uppercase;
+}
+
+//banner area global
+#banner-area{
+  @media screen and (min-width:1024px){
+     min-height:200px;
+     max-height:400px;
+     overflow:hidden;
+      #page-title-wrapper{
+        #page-title{
+          font-family: 'Mugdil' !important;
+          font-size:3em;      
+        }
+        #page-description p{
+          font-family: 'Mugdil' !important;
+           font-size:1.2em;
+           letter-spacing:2px !important;
+        }
+        .center;
+      }
+  }
+}
+
+//no banner image class
+.no-banner-image{
+  #banner-area{
+    min-height:0px;
+    padding-top:60px;
+    @media screen and (max-width:1024px){
+      padding:0;
+    }
+    padding-bottom:0px;
+    #page-title{
+      padding-top:20px;
+      color:black;
+    }
+  }  
+}
