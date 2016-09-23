@@ -2,7 +2,7 @@
 
 #page-title-wrapper{
   opacity:0;
-  transition:0.5s;
+  transition:opacity 0.5s;
   &.is-loaded{
     opacity:1;
   }
@@ -49,17 +49,20 @@
 
 //banner area global
 #banner-area{
+  @media screen and (max-width:500px){
+    #page-title{
+      font-size:1.7em !important;
+    }
+  }
   @media screen and (min-width:1024px){
      min-height:200px;
      max-height:400px;
      overflow:hidden;
       #page-title-wrapper{
         #page-title{
-          font-family: 'Mugdil' !important;
           font-size:3em;      
         }
         #page-description p{
-          font-family: 'Mugdil' !important;
            font-size:1.2em;
            letter-spacing:2px !important;
         }
