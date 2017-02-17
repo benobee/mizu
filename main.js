@@ -9,14 +9,21 @@ class App_Build {
         this.SQS = sqs;
         //site data
         this.site = Site;
+
         //modules
         this.banner = modules.banner;
+        this.logoMobile = modules.logoMobile;
+        this.popup = modules.popup;
 
         //execute
         this.moduleInit();
+
+        console.log(this);
     }
     moduleInit(){
         this.banner.init();
+        this.logoMobile.init();
+        this.popup.init();
     }
 };
 

@@ -1,4 +1,4 @@
-import { $ } from '../core/index';
+import $ from 'jquery-slim';
 
 const banner = {
   init(){
