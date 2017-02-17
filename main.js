@@ -17,8 +17,6 @@ class App_Build {
 
         //execute
         this.moduleInit();
-
-        console.log(this);
     }
     moduleInit(){
         this.banner.init();

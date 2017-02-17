@@ -1,15 +1,16 @@
 import cookie from './cookie.js';
+import session from './session.js';
 import $ from 'jquery-slim';
 
 const popup = {
     init(){
         this.renderContainer();
-        this.cookieName = 'Popup';
+        this.displayName = 'Mizu_Book_Now_Popup';
         this.events();
 
         setTimeout(() => {
-        	this.checkCookie();
-        }, 3000);
+            this.checkSession();
+        }, 10000);
 
     },
     renderContainer() {
@@ -60,30 +61,25 @@ const popup = {
     showPopup(){
     	$(this.container).addClass("is-rendered");
     },
-    checkCookie(){
-    	const newsletter = {};
-
-    	let hasBeenVisible = false;
+    checkSession() {
+        let hasBeenVisible = false;
  
-    	hasBeenVisible = cookie.get(this.cookieName);
+        hasBeenVisible = session.get(this.displayName);
 
-    	if (hasBeenVisible == undefined) {
-    		this.showPopup();
-    		return false;
-    	}
+        if (!hasBeenVisible) {
+            this.showPopup();
+            return false;
+        }
     },
     closePopupWhenClicked(){
         $(".app-module.popup .close").on("click", () => {
-            this.setCookies();
+            session.set(this.displayName, true);
             $(this.container).removeClass("is-rendered");
         });
 
         $(".app-module.popup .button").on("click", () => {
-            this.setCookies();
+            session.set(this.displayName, true);
         });
-    },
-    setCookies() {
-    	cookie.set(this.cookieName, true, 365);
     }
 };
 
