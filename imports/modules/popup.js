@@ -41,7 +41,8 @@ const popup = {
 
         $(button).attr({
             class: 'button',
-            href: '/schedule'
+            href: 'https://clients.mindbodyonline.com/classic/ws?studioid=718904&stype=-9',
+            target: '_blank'
         });
 
         button.innerText = 'Book Now';
